@@ -21,7 +21,7 @@ npx create-react-app blog
  
 ---
 
-## JSX문법 
+### JSX문법 
 ```
 1) class 대신 className으로 사용
 2) 데이터 바인딩
@@ -33,7 +33,7 @@ npx create-react-app blog
 
 ---
 
-## state
+### state
 ```
 1) 데이터를 변수에 넣어 사용
 2) 데이터를 state에 넣어 사용
@@ -45,4 +45,20 @@ npx create-react-app blog
 ```
 ▶ 자주 바뀌는, 중요한 데이터는 변수 말고 `state`로 저장해서 사용.
 
+##### warning 문구 없애기
+###### 위험할 수 있으니, 사용 시 주의
+```
+/* eslint-disable */
+```
+
 <img src="images/state.jpg" width="320" height="680">
+
+---
+
+### 좋아요 기능
+<img src="images/best.jpg" width="270" height="450"> <br>
+- TEST <br>
+    <img src="images/best_test.jpg" width="450" height="150">
+    ```
+    이모티콘을 누를 때마다 1 콘솔창에 표시
+    ```

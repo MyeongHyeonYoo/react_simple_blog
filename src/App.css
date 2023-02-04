@@ -22,6 +22,10 @@ body {
   padding: 0 20px;
 }
 
+.best {
+  cursor: pointer;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
