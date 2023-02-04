@@ -62,3 +62,12 @@ npx create-react-app blog
     ```
     이모티콘을 누를 때마다 1 콘솔창에 표시
     ```
+
+- PLAY <br>
+    <img src="images/best_plus.jpg" width="270" height="450"> <br>
+    ```
+    // [state, state변경함수]
+    let [best, best_v] = useState(0);
+
+    onClick={ () => { best_v(best + 1) }}
+    ```
