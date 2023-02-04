@@ -1,23 +1,21 @@
+/* eslint-disable jsx-a11y/alt-text */
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let posts = {color : 'blue', fontSize : '30px' };
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="black-nav">
+        {/* <div style={{color : 'blue', fontSize : '30px' }}>개발 Blog</div> */}
+        <div style={ posts }>개발 Blog</div>
+        
+      </div>
+      <img src={ logo } />
+      <h4>하하..</h4>
     </div>
   );
 }
