@@ -16,6 +16,12 @@ body {
   font-size: 20px;
 }
 
+.list {
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
