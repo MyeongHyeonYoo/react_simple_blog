@@ -12,6 +12,13 @@ function App() {
   // [state, state변경함수]
   let [best, best_v] = useState(0);
 
+  function change_title() {
+    var newTitle = [...title];
+    newTitle[0] = '여자 코트 추천';
+    b_title(newTitle);
+    // b_title(['여자 코트 추천', ' 강남 우동 맛집', '파이썬 독학']);
+  }
+
   return (
     <div className="App">
       <div className="black-nav">
@@ -32,6 +39,7 @@ function App() {
         <p>2월 4일 발행</p>
       </div>
       <hr />
+      <button onClick={ change_title } >버튼</button>
     </div>
   );
 }

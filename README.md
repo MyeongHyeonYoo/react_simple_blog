@@ -71,3 +71,27 @@ npx create-react-app blog
 
     onClick={ () => { best_v(best + 1) }}
     ```
+---
+
+### 제목 바꾸기(deep copy 사용)
+```
+수정된 [데이터]를 만들기
+▷ state의 복사본을 만들어서 수정
+▷▷ deep copy해서 수정
+───────────────────────────────────
+<reference data type>
+let [title, b_title] = useState(['남자 코트 추천', ' 강남 우동 맛집', '파이썬 독학']);
+var newTitle = title;
+    newTitle[0] = '여자 코트 추천';
+───────────────────────────────────
+<deep copy>
+// 값 공유X -> 서로 독립적인 값을 가지고 복사
+let [title, b_title] = useState(['남자 코트 추천', ' 강남 우동 맛집', '파이썬 독학']);
+var newTitle = [...title]; // ... -> spread operator(중괄호, 대괄호 제거)
+                           // object도 ()중괄호 써서 deep copy 가능
+    newTitle[0] = '여자 코트 추천';
+───────────────────────────────────
+* 리액트 대 원칙 : immutable data -> state 데이터가 직접 수정이 되면 안 된다.
+```
+
+<img src="images/title_button.jpg" width="270" height="450"> <br>
