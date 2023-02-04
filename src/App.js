@@ -39,9 +39,21 @@ function App() {
         <p>2월 4일 발행</p>
       </div>
       <hr />
-      <button onClick={ change_title } >버튼</button>
+      
+    <Modal />
+
     </div>
   );
+}
+
+function Modal() {
+  return (
+    <div className='modal'>
+        <h2>제목</h2>
+        <p>날짜</p>
+        <p>상세 내용</p>
+      </div>
+  )
 }
 
 export default App;

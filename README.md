@@ -74,6 +74,9 @@ npx create-react-app blog
 ---
 
 ### 제목 바꾸기(deep copy 사용)
+
+<img src="images/title_button.jpg" width="270" height="450"> <br>
+
 ```
 수정된 [데이터]를 만들기
 ▷ state의 복사본을 만들어서 수정
@@ -94,4 +97,50 @@ var newTitle = [...title]; // ... -> spread operator(중괄호, 대괄호 제거
 * 리액트 대 원칙 : immutable data -> state 데이터가 직접 수정이 되면 안 된다.
 ```
 
-<img src="images/title_button.jpg" width="270" height="450"> <br>
+---
+
+### Modal창으로 띄우는 상세페이지
+
+- HTML을 한 단어로 줄여서 쓸 수 있는 방법 <br>
+▷ 리액트의 Component문법(관리의 편리성)
+
+- Component 만드는 법
+    1. 함수 만들며 이름 짓기
+    2. 축약을 원하는 HTML 작성
+    3. 원하는 곳에 <함수명 /> (또는 <함수명></함수명>) <br>
+    (함수명 첫 글자는 대문자로)
+
+- Component로 만들기 좋은 것
+    1. 반복출현하는 HTML 덩어리
+    2. 자주 변경되는 HTML UI
+    3. 다른 페이지 만들 때도 컴포넌트로 만듦
+
+<img src="images/modal.jpg" width="270" height="450"> <br>
+
+
+- fragments 문법 사용<br>
+▷ 의미 없는 div를 쓰기 싫다면 사용(<></>)
+```
+function Modal() {
+  return (
+    <>
+    <div className='modal'>
+        <h2>제목</h2>
+        <p>날짜</p>
+        <p>상세 내용</p>
+      </div>
+    </>
+  )
+}
+```
+--- 
+
+```
+* 코딩애플 *
+React 기초
+https://www.youtube.com/watch?v=LclObYwGj90&list=PLfLgtT94nNq1e6tr4sm2eH6ZZC2jcqGOy&index=1
+```
+
+---
+---
+---
